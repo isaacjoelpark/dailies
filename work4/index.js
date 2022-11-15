@@ -45,13 +45,84 @@ function MainContent(){
         <h1>I'm learning react!</h1>
     )
 }
-ReactDOM.render(
-    <Navbar />,
-    <MainContent />
-    document.getElementById("root")
-)
+// ReactDOM.render(
+//     <Navbar />,
+//     <MainContent />
+//     document.getElementById("root")
+// )
+// const elment = <h1> className = "header"> This is JSX</h1>
+// const h1 = document.createElement("h1")
+// h1.textContent = "This is an imperative way to program"
+// h1.className = "header"
+// document.getElementById("root").append(h1)
+// ReactDom.render(element, docment.getElementById("root"))
 
-const h1 = document.createElement("h1")
-h1.textContent = "This is an imperative way to program"
-h1.className = "header"
-document.getElementById("root").append(h1)
+// const page = (
+//     <div>
+//         <h1 className = "header">This is JSX</h1>
+//         <p>This is a paragraph</p>
+//     </div>
+// )
+// ReactDOM.render(page,document.getElementById("root"))
+// const plain = (
+//     <nav>
+//         <h1>ISAAC</h1>
+//         <ul>
+//             <li>Pricing</li>
+//             <li>About</li>
+//             <li>Contact</li>
+//         </ul>
+//     </nav>
+// )
+// ReactDOM.render(plain, docment.getElementById("root"))
+// import React from "react"
+// import ReactDom from 'react-dom'
+
+// const page = (
+//     <div>
+//         <img src='./react-logo.png'width="40px"/> 
+        // <div>
+        //     <h1>Fun facts about React</h1>
+        //     <ul>
+        //         <li>Was first released in 2013</li>
+        //         <li>was orginally ccreated by Jordan walke</li>
+        //         <li>is maintaned by fb</li>
+        //         <li>power thousands of enterprise apps, including mobile apps</li>
+        //         </ul>
+        // </div>
+//     </div>
+// )
+
+// ReactDom.render(page, document.getElementById("root"))
+// function TempName(){
+//     return (
+//         <div>
+//             <h1>Fun facts about React</h1>
+//             <ul>
+//                 <li>Was first released in 2013</li>
+//                 <li>was orginally ccreated by Jordan walke</li>
+//                 <li>is maintaned by fb</li>
+//                 <li>power thousands of enterprise apps, including mobile apps</li>
+//                 </ul>
+//         </div>
+//     )
+// }
+// ReactDOM.render(<TempName />, document.getElementById("root"))
+
+
+import React from "react"
+import ReactDOM from "react-dom"
+import Header from "./Header"
+import Footer from "./Footer"
+import MainContent from "./MainContent"
+
+function FunName(){
+    return(
+        <div>
+        <Header />
+        <Footer />
+        <MainContent />
+              </div>
+    )
+}
+ReactDom.render(<FunName />, document.getElementById("root"))
