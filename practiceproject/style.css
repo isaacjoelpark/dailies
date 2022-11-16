@@ -8,7 +8,7 @@ body {
 }
 nav{
     display:flex;
-    align-items: center;
+    align-items: left;
     background-color: #21222A;
     height: 90px;
     padding: 20px 25px;
