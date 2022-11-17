@@ -9,7 +9,21 @@ export default function App(){
         <div className="container">
             <Main />
             <Navbar />
-            <Card />
+            <Card 
+            img = ".images/katies-zaferes.png "
+            rating = "5.0"
+            reviewCount= {6}
+            country = "USA"
+            title = "Life lessons with Katies Zaferes"
+            price = {136}
+            />
+            <Card 
+            img = "./images/fluffykins.png"
+            name = "fluffy"
+            phone = "(323) 248- 1284"
+            />
+
+
         </div>
     )
 }
