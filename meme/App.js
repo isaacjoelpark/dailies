@@ -5,7 +5,7 @@ import Meme from "./Meme"
  * Challenge: Build the Header component
  */
 
-
+  
 export default function App() {
     return (
         <div>
